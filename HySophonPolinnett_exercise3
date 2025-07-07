@@ -1,0 +1,16 @@
+numbers = [1, 2, 3]
+
+def remove_all_after(numbers, n):
+    if not numbers:
+        return []
+    elif n not in numbers:
+        return numbers
+
+    new_list = []
+    for x in numbers:
+        new_list.append(x)
+        if x == n:
+            break
+    return new_list
+
+print(remove_all_after(numbers, 4))
